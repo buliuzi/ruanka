@@ -1,12 +1,18 @@
 # 算法笔记记录
+
 ## 临时记录的一些
+
 scanf和gets两者在接受字符串时：
+
 1.不同点：
 scanf不能接受空格、制表符Tab、回车等；对末尾回车符的处理：把回车符保留在缓存中。
 而gets能够接受空格、制表符Tab和回车等；对末尾回车符的处理：接收回车，但把回车替换为\0.
+
 2.相同点：
 字符串接受结束后自动加'\0'。
+
 ## 入门模拟
+
 - **日期处理**
 
 <img src="./image/dateprocess.png" height="70%" width="70%" >
@@ -644,5 +650,52 @@ double solve(double L, double R)
         }
     }
     return mid;
+}
+```
+
+装水问题
+
+<img src="./image/loadwater.png" height="70%" width="70%" >
+
+```cpp
+#include <cstdio>
+#include <cmath>
+using namespace std;
+const double PI = acos(-1);
+const double eps = 1e-5;
+
+double f(double R, double h)
+{
+	double alpha = 2 * acos((R - h) / R);
+	double L = 2 * sqrt(R*R - (R - h)*(R - h));
+	double s2 = PI * R*R / 2;
+	double s1 = alpha * R*R / 2 - L * (R - h) / 2;
+	return s1 / s2;
+}
+
+double solve(double R, double r)
+{
+	double left = 0, right = R, mid;
+	while (right - left > eps)
+	{
+		mid = (left + right) / 2;
+		if (f(R, mid) > r)
+		{
+			right = mid;
+		}
+		else {
+			left = mid;
+		}
+	}
+	return mid;
+}
+
+int main()
+{
+	freopen("in.dat", "r", stdin);
+	double R, r;
+	scanf("%lf%lf", &R, &r);
+	printf("%.4f\n", solve(R, r));
+	return 0;
 }
 ```
