@@ -15,15 +15,15 @@ struct Student
 	char ID[10];
 	int vg;
 	int tg;
-	//Ôö¼Ó½á¹¹//
+	//å¢åŠ ç»“æ„//
 	int sum;//
 	int flag;//
 	///////////
 }stu[100010];
 /*
-ÕâÀïµÄÏë·¨ÊÇÃ»´íµÄ£¬Òª½øĞĞclassify£¬ 
-µ«ÊÇÃ»ÓĞ¿¼ÂÇµ½×îºÃµÄifelse½á¹¹£¬
-¶øÇÒclassify¶à´Îµ÷ÓÃ£¬numÖØ¸´Ôö¼ÓÕâÒ»µãÔì³ÉÁË´íÎó
+è¿™é‡Œçš„æƒ³æ³•æ˜¯æ²¡é”™çš„ï¼Œè¦è¿›è¡Œclassifyï¼Œ 
+ä½†æ˜¯æ²¡æœ‰è€ƒè™‘åˆ°æœ€å¥½çš„ifelseç»“æ„ï¼Œ
+è€Œä¸”classifyå¤šæ¬¡è°ƒç”¨ï¼Œnumé‡å¤å¢åŠ è¿™ä¸€ç‚¹é€ æˆäº†é”™è¯¯
 */
 /*/////////////////////////////////////////
 int classify(Student a)
@@ -72,7 +72,7 @@ int main()
 		scanf("%s %d %d", stu[i].ID, &stu[i].vg, &stu[i].tg);
 		stu[i].sum = stu[i].vg + stu[i].tg;
 		if (stu[i].vg < L||stu[i].tg < L) {
-			//²»¼°¸ñ
+			//ä¸åŠæ ¼
 			num++;
 			stu[i].flag = NONE;
 		}

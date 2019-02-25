@@ -1,19 +1,19 @@
-# Ëã·¨±Ê¼Ç¼ÇÂ¼
+# ç®—æ³•ç¬”è®°è®°å½•
 
-## ÁÙÊ±¼ÇÂ¼µÄÒ»Ğ©
+## ä¸´æ—¶è®°å½•çš„ä¸€äº›
 
-scanfºÍgetsÁ½ÕßÔÚ½ÓÊÜ×Ö·û´®Ê±£º
+scanfå’Œgetsä¸¤è€…åœ¨æ¥å—å­—ç¬¦ä¸²æ—¶ï¼š
 
-1.²»Í¬µã£º
-scanf²»ÄÜ½ÓÊÜ¿Õ¸ñ¡¢ÖÆ±í·ûTab¡¢»Ø³µµÈ£»¶ÔÄ©Î²»Ø³µ·ûµÄ´¦Àí£º°Ñ»Ø³µ·û±£ÁôÔÚ»º´æÖĞ¡£
-¶øgetsÄÜ¹»½ÓÊÜ¿Õ¸ñ¡¢ÖÆ±í·ûTabºÍ»Ø³µµÈ£»¶ÔÄ©Î²»Ø³µ·ûµÄ´¦Àí£º½ÓÊÕ»Ø³µ£¬µ«°Ñ»Ø³µÌæ»»Îª\0.
+1.ä¸åŒç‚¹ï¼š
+scanfä¸èƒ½æ¥å—ç©ºæ ¼ã€åˆ¶è¡¨ç¬¦Tabã€å›è½¦ç­‰ï¼›å¯¹æœ«å°¾å›è½¦ç¬¦çš„å¤„ç†ï¼šæŠŠå›è½¦ç¬¦ä¿ç•™åœ¨ç¼“å­˜ä¸­ã€‚
+è€Œgetsèƒ½å¤Ÿæ¥å—ç©ºæ ¼ã€åˆ¶è¡¨ç¬¦Tabå’Œå›è½¦ç­‰ï¼›å¯¹æœ«å°¾å›è½¦ç¬¦çš„å¤„ç†ï¼šæ¥æ”¶å›è½¦ï¼Œä½†æŠŠå›è½¦æ›¿æ¢ä¸º\0.
 
-2.ÏàÍ¬µã£º
-×Ö·û´®½ÓÊÜ½áÊøºó×Ô¶¯¼Ó'\0'¡£
+2.ç›¸åŒç‚¹ï¼š
+å­—ç¬¦ä¸²æ¥å—ç»“æŸåè‡ªåŠ¨åŠ '\0'ã€‚
 
-## ÈëÃÅÄ£Äâ
+## å…¥é—¨æ¨¡æ‹Ÿ
 
-- **ÈÕÆÚ´¦Àí**
+- **æ—¥æœŸå¤„ç†**
 
 <img src="./image/dateprocess.png" height="70%" width="70%" >
 
@@ -48,7 +48,7 @@ int main(int argc, char const *argv[])
         m2=(date2-y2*10000)/100;
         d1=date1-y1*10000-m1*100;
         d2=date2-y2*10000-m2*100;*/
-        //×¢ÒâÕâÀïµÄ´¦Àí·½Ê½
+        //æ³¨æ„è¿™é‡Œçš„å¤„ç†æ–¹å¼
         m1 = (date1 % 10000) / 100;
         m2 = (date2 % 10000) / 100;
         d1 = date1 % 100;
@@ -76,19 +76,19 @@ int main(int argc, char const *argv[])
 
 ```
 
-Ë¼Â·×Ü½á£ºÈÕÆÚÎÊÌâÊ¹ÓÃÑ­»·¼ÓÒ»·½·¨£¬¶ÔÓÚÔÂ·İµÄÎÊÌâÓÃ¶şÎ¬Êı×é½â¾ö¡£
+æ€è·¯æ€»ç»“ï¼šæ—¥æœŸé—®é¢˜ä½¿ç”¨å¾ªç¯åŠ ä¸€æ–¹æ³•ï¼Œå¯¹äºæœˆä»½çš„é—®é¢˜ç”¨äºŒç»´æ•°ç»„è§£å†³ã€‚
 
-- **½øÖÆ×ª»»**
+- **è¿›åˆ¶è½¬æ¢**
 
 ```cpp
-//½«Ò»¸öP½øÖÆÊıx×ª»»ÎªÊ®½øÖÆÊıy
+//å°†ä¸€ä¸ªPè¿›åˆ¶æ•°xè½¬æ¢ä¸ºåè¿›åˆ¶æ•°y
 int y=0,product=1;
 while(x!=0){
     y+=(x%10)*product;
     x/=10;
     product*=P;
 }
-//½«Ò»¸öÊ®½øÖÆÊıy×ª»»ÎªQ½øÖÆÊız
+//å°†ä¸€ä¸ªåè¿›åˆ¶æ•°yè½¬æ¢ä¸ºQè¿›åˆ¶æ•°z
 int z[40],num=0;
 do{
     z[num++]=y%Q;
@@ -96,7 +96,7 @@ do{
 }while(y!=0);
 ```
 
-- **Ëµ·´»°**
+- **è¯´åè¯**
 
 <img src="./image/reverse.png" height="70%" width="70%" >
 
@@ -132,7 +132,7 @@ int main(int argc, char const *argv[])
         if (i > 0)
             printf(" ");
     }
-    //ÏÂÃæÊÇ¸ü¼ò½àµÄ°ì·¨
+    //ä¸‹é¢æ˜¯æ›´ç®€æ´çš„åŠæ³•
     /*int num = 0;
     while (scanf("%s", str[num++]) != EOF)
         ;
@@ -151,18 +151,18 @@ int main(int argc, char const *argv[])
 
 ```
 
-## Ëã·¨³õ²½
+## ç®—æ³•åˆæ­¥
 
-ÏÂÃæÊÇÁ½¸öÅÅĞòËã·¨
+ä¸‹é¢æ˜¯ä¸¤ä¸ªæ’åºç®—æ³•
 
 ```cpp
 int A[maxn],n;
-void selectSort()//Ñ¡ÔñÅÅĞò
+void selectSort()//é€‰æ‹©æ’åº
 {
     for (int i = 0; i < n; i++)
     {
         int k = i;
-        for (int j = i; j < n; j++) //¼ÇÂ¼iµ½n-1×îĞ¡µÄÔªËØ
+        for (int j = i; j < n; j++) //è®°å½•iåˆ°n-1æœ€å°çš„å…ƒç´ 
         {
             if (A[j] < A[k])
             {
@@ -174,7 +174,7 @@ void selectSort()//Ñ¡ÔñÅÅĞò
         A[k] = tmp;
     }
 }
-void insertSort()//²åÈëÅÅĞò
+void insertSort()//æ’å…¥æ’åº
 {
     for (int i = 1; i < n; i++)
     {
@@ -191,7 +191,7 @@ void insertSort()//²åÈëÅÅĞò
 
 - **PAT Ranking**
 
-ÕâÌâµÄË¼Â·Ò»¿ªÊ¼Ã»ÓĞÕûÀíºÃ£¬ĞèÒª¶à¸´Ï°
+è¿™é¢˜çš„æ€è·¯ä¸€å¼€å§‹æ²¡æœ‰æ•´ç†å¥½ï¼Œéœ€è¦å¤šå¤ä¹ 
 
 <img src="./image/PATRanking1.png" height="70%" width="70%" >
 <img src="./image/PATRanking2.png" height="70%" width="70%" >
@@ -204,10 +204,10 @@ using namespace std;
 struct STUDENT
 {
     char num[14]; //ID
-    int lnum;     //¿¼³¡ºÅ
-    int grade;    //·ÖÊı
-    //int frank;//×ÜÅÅÃû  //×ÜÅÅÃû×îºóÒ»ÆğÊä³ö¾ÍĞĞ
-    int lrank; //¿¼³¡ÅÅÃû
+    int lnum;     //è€ƒåœºå·
+    int grade;    //åˆ†æ•°
+    //int frank;//æ€»æ’å  //æ€»æ’åæœ€åä¸€èµ·è¾“å‡ºå°±è¡Œ
+    int lrank; //è€ƒåœºæ’å
 } stu[30000];
 bool cmp(STUDENT a, STUDENT b)
 {
@@ -230,7 +230,7 @@ int main(int argc, char const *argv[])
             scanf("%s %d", stu[id].num, &stu[id].grade);
             stu[id++].lnum = i;
         }
-        sort(stu + id - tmp, stu + id, cmp); //×¢ÒâÕâÀïµÄ´¦Àí
+        sort(stu + id - tmp, stu + id, cmp); //æ³¨æ„è¿™é‡Œçš„å¤„ç†
         stu[id - tmp].lrank = 1;
         for (int k = id - tmp + 1; k < id; k++)
         {
@@ -263,7 +263,7 @@ int main(int argc, char const *argv[])
 
 ```
 
-- **hash±í**
+- **hashè¡¨**
 ```cpp
 #include <cstdio>
 using namespace std;
@@ -299,7 +299,7 @@ int main(int argc, char const *argv[])
 }
 ```
 
-- **×ÖµäĞòÈ«ÅÅÁĞ**
+- **å­—å…¸åºå…¨æ’åˆ—**
 ```cpp
 #include <cstdio>
 //#include <cstring>
@@ -308,9 +308,9 @@ using namespace std;
 const int maxn = 11;
 int P[maxn], hashTable[maxn];
 int n;
-void func(int index) //ÏÖÔÚÕı×¼±¸ÌîP[index]
+void func(int index) //ç°åœ¨æ­£å‡†å¤‡å¡«P[index]
 {
-    if (index == n + 1) //ÔÚ±ß½ç
+    if (index == n + 1) //åœ¨è¾¹ç•Œ
     {
         for (int i = 1; i <= n; i++)
         {
@@ -319,7 +319,7 @@ void func(int index) //ÏÖÔÚÕı×¼±¸ÌîP[index]
         printf("\n");
         return;
     }
-    for (int i = 1; i <= n; i++) //´Ó1µ½nÌîÈëÊı×Ö
+    for (int i = 1; i <= n; i++) //ä»1åˆ°nå¡«å…¥æ•°å­—
     {
         if (hashTable[i] == false)
         {
@@ -339,7 +339,7 @@ int main(int argc, char const *argv[])
 }
 ```
 
-- **°Ë»ÊºóµÄ±©Á¦·¨ºÍ»ØËİ·¨**
+- **å…«çš‡åçš„æš´åŠ›æ³•å’Œå›æº¯æ³•**
 
 ```cpp
 #include <cstdio>
@@ -425,9 +425,9 @@ int main(int argc, char const *argv[])
 }
 ```
 
-- **Ì°ĞÄ**
+- **è´ªå¿ƒ**
 
-ÂôÔÂ±ı
+å–æœˆé¥¼
 
 <img src="./image/mooncake1.png" height="70%" width="70%" >
 <img src="./image/mooncake2.png" height="70%" width="70%" >
@@ -488,9 +488,9 @@ int main(int argc, char const *argv[])
 }
 ```
 
-- **Çø¼äÌ°ĞÄ£¨»î¶¯Ñ¡Ôñ£©**
+- **åŒºé—´è´ªå¿ƒï¼ˆæ´»åŠ¨é€‰æ‹©ï¼‰**
 
-ÏÂÃæÊÇN¸ö»î¶¯µÄÑ¡ÔñÎÊÌâ£¨Çø¼ä²»Ïà½»£©
+ä¸‹é¢æ˜¯Nä¸ªæ´»åŠ¨çš„é€‰æ‹©é—®é¢˜ï¼ˆåŒºé—´ä¸ç›¸äº¤ï¼‰
 
 ```cpp
 #include <cstdio>
@@ -516,7 +516,7 @@ int main(int argc, char const *argsv[])
 {
     //freopen("in.dat", "r", stdin);
     int N;
-    while (scanf("%d", &N), N != 0) //¶ººÅ±í´ïÊ½È¡¾öÓÚºóÃæµÄÖµ
+    while (scanf("%d", &N), N != 0) //é€—å·è¡¨è¾¾å¼å–å†³äºåé¢çš„å€¼
     {
         for (int i = 0; i < N; i++)
         {
@@ -539,11 +539,11 @@ int main(int argc, char const *argsv[])
 
 ```
 
-Çø¼äÑ¡µãºÍÇø¼ä²»Ïà½»µÄÇø±ğ¾ÍÔÚÓÚ`if (I[i].y <= lastX)`¸ÄÎª`if (I[i].y < lastX)`£¬
-ÒòÎªÇø¼äÑ¡µã£¨ÔÚ°´×ó¶Ëµã´Ó´óµ½Ğ¡µÄÅÅĞòÌõ¼şÏÂ£©Ã¿´Î¶¼ÒªÑ¡×ó¶Ëµã£¬
-ÕâÑù×ó¶ËµãºÍÏÂÒ»¸ö¿¼²ìÇø¼äµÄÓÒ¶Ëµã¾Í²»ÄÜÖØºÏ£¨ÖØºÏ¾ÍÊÇÁ½¸öÇø¼äÓĞÒ»¸ö¹«¹²µÄµãÁË£©
+åŒºé—´é€‰ç‚¹å’ŒåŒºé—´ä¸ç›¸äº¤çš„åŒºåˆ«å°±åœ¨äº`if (I[i].y <= lastX)`æ”¹ä¸º`if (I[i].y < lastX)`ï¼Œ
+å› ä¸ºåŒºé—´é€‰ç‚¹ï¼ˆåœ¨æŒ‰å·¦ç«¯ç‚¹ä»å¤§åˆ°å°çš„æ’åºæ¡ä»¶ä¸‹ï¼‰æ¯æ¬¡éƒ½è¦é€‰å·¦ç«¯ç‚¹ï¼Œ
+è¿™æ ·å·¦ç«¯ç‚¹å’Œä¸‹ä¸€ä¸ªè€ƒå¯ŸåŒºé—´çš„å³ç«¯ç‚¹å°±ä¸èƒ½é‡åˆï¼ˆé‡åˆå°±æ˜¯ä¸¤ä¸ªåŒºé—´æœ‰ä¸€ä¸ªå…¬å…±çš„ç‚¹äº†ï¼‰
 
-- Ò»°ãµÄ¶ş·Ö²éÕÒ
+- ä¸€èˆ¬çš„äºŒåˆ†æŸ¥æ‰¾
 ```cpp
 int binarySearch(int A[], int left, int right, int x)
 {
@@ -568,7 +568,7 @@ int binarySearch(int A[], int left, int right, int x)
 }
 ```
 
-- ÕÒµÚÒ»¸ö·ûºÏÌõ¼şµÄÔªËØ
+- æ‰¾ç¬¬ä¸€ä¸ªç¬¦åˆæ¡ä»¶çš„å…ƒç´ 
 ```cpp
 int lower_bound(int A[], int left, int right, int x)
 {
@@ -604,13 +604,13 @@ int upper_bound(int A[], int left, int right, int x)
     }
     return left;
 }
-int solve(int A[], int left, int right, int x)//ÕâÊÇÄ£°å£¡
+int solve(int A[], int left, int right, int x)//è¿™æ˜¯æ¨¡æ¿ï¼
 {
     int mid;
     while (left < right)////////////////
     {
         mid = (left + right) / 2;
-        if ("Ìõ¼ş³ÉÁ¢")//µÚÒ»¸öÂú×ãÌõ¼şµÄÔªËØµÄÎ»ÖÃ<=mid
+        if ("æ¡ä»¶æˆç«‹")//ç¬¬ä¸€ä¸ªæ»¡è¶³æ¡ä»¶çš„å…ƒç´ çš„ä½ç½®<=mid
         {
             right = mid;
         }
@@ -623,9 +623,9 @@ int solve(int A[], int left, int right, int x)//ÕâÊÇÄ£°å£¡
 }
 ```
 
-- ¶ş·Ö·¨ÍØÕ¹
+- äºŒåˆ†æ³•æ‹“å±•
 
-½â¾öº¯Êıf(x)=0Çó½âµÄÎÊÌâ
+è§£å†³å‡½æ•°f(x)=0æ±‚è§£çš„é—®é¢˜
 
 ```cpp
 const int eps = 1e-5;
@@ -653,7 +653,7 @@ double solve(double L, double R)
 }
 ```
 
-×°Ë®ÎÊÌâ
+è£…æ°´é—®é¢˜
 
 <img src="./image/loadwater.png" height="70%" width="70%" >
 

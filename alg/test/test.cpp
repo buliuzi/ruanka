@@ -1,4 +1,4 @@
-﻿#include <cstdio>
+#include <cstdio>
 #include <cmath>
 using namespace std;
 const double PI = acos(-1);
