@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"E:/Chapter4/ex.v" \
+"E:/Chapter4/ex_mem.v" \
+"E:/Chapter4/id.v" \
+"E:/Chapter4/id_ex.v" \
+"E:/Chapter4/if_id.v" \
+"E:/Chapter4/inst_rom.v" \
+"E:/Chapter4/mem.v" \
+"E:/Chapter4/mem_wb.v" \
+"E:/Chapter4/openmips.v" \
+"E:/Chapter4/openmips_min_sopc.v" \
+"E:/Chapter4/pc_reg.v" \
+"E:/Chapter4/regfile.v" \
+"E:/Chapter4/openmips_min_sopc_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

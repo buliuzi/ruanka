@@ -1,0 +1,1 @@
+-wto "c15dc0d9d7e24eab9c9af7f1bdf30db0" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "openmips_min_sopc_tb_behav" "xil_defaultlib.openmips_min_sopc_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

@@ -1,0 +1,19 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/ruanka/ccp/project_test/project_test.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+E:/Chapter4/defines.v,1392895312,verilog,,,,,,,,,,,,
+E:/Chapter4/ex.v,1392896488,verilog,,E:/Chapter4/ex_mem.v,E:/Chapter4/defines.v,ex,,,,,,,,
+E:/Chapter4/ex_mem.v,1392891309,verilog,,E:/Chapter4/id.v,E:/Chapter4/defines.v,ex_mem,,,,,,,,
+E:/Chapter4/id.v,1392891091,verilog,,E:/Chapter4/id_ex.v,E:/Chapter4/defines.v,id,,,,,,,,
+E:/Chapter4/id_ex.v,1392895330,verilog,,E:/Chapter4/if_id.v,E:/Chapter4/defines.v,id_ex,,,,,,,,
+E:/Chapter4/if_id.v,1392891094,verilog,,E:/Chapter4/inst_rom.v,E:/Chapter4/defines.v,if_id,,,,,,,,
+E:/Chapter4/inst_rom.v,1552286369,verilog,,E:/Chapter4/mem.v,E:/Chapter4/defines.v,inst_rom,,,,,,,,
+E:/Chapter4/mem.v,1392891391,verilog,,E:/Chapter4/mem_wb.v,E:/Chapter4/defines.v,mem,,,,,,,,
+E:/Chapter4/mem_wb.v,1392896565,verilog,,E:/Chapter4/openmips.v,E:/Chapter4/defines.v,mem_wb,,,,,,,,
+E:/Chapter4/openmips.v,1396145314,verilog,,E:/Chapter4/openmips_min_sopc.v,E:/Chapter4/defines.v,openmips,,,,,,,,
+E:/Chapter4/openmips_min_sopc.v,1396146218,verilog,,E:/Chapter4/pc_reg.v,E:/Chapter4/defines.v,openmips_min_sopc,,,,,,,,
+E:/Chapter4/openmips_min_sopc_tb.v,1393082256,verilog,,,E:/Chapter4/defines.v,openmips_min_sopc_tb,,,,,,,,
+E:/Chapter4/pc_reg.v,1396144420,verilog,,E:/Chapter4/regfile.v,E:/Chapter4/defines.v,pc_reg,,,,,,,,
+E:/Chapter4/regfile.v,1391781824,verilog,,E:/Chapter4/openmips_min_sopc_tb.v,E:/Chapter4/defines.v,regfile,,,,,,,,

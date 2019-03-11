@@ -1,6 +1,6 @@
-webtalk_init -webtalk_dir D:/ruanka/ccp/cpu_singlecycle/cpu_singlecycle.sim/sim_1/behav/xsim/xsim.dir/sim_rom_behav/webtalk/
+webtalk_init -webtalk_dir D:/ruanka/ccp/cpu_singlecycle/cpu_singlecycle.sim/sim_1/behav/xsim/xsim.dir/openmips_min_sopc_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Wed Feb 20 18:49:38 2019" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Mon Mar 11 17:31:44 2019" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2258646" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -12,9 +12,9 @@ webtalk_add_data -client project -key target_family -value "not_applicable" -con
 webtalk_add_data -client project -key target_device -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_package -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
-webtalk_add_data -client project -key random_id -value "af85e1bc-4994-48c4-ade6-b078f7849aef" -context "software_version_and_target_device"
+webtalk_add_data -client project -key random_id -value "3b954832-5e2e-4231-b6ca-550b9efd7505" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "08d2fe38934842548194f735a888b157" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "13" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "12" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz" -context "user_environment"
@@ -22,11 +22,12 @@ webtalk_add_data -client project -key cpu_speed -value "2397 MHz" -context "user
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
+webtalk_add_data -client xsim -key runall -value "true" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "2" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.08_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "5632_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 496684346 -regid "" -xml D:/ruanka/ccp/cpu_singlecycle/cpu_singlecycle.sim/sim_1/behav/xsim/xsim.dir/sim_rom_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/ruanka/ccp/cpu_singlecycle/cpu_singlecycle.sim/sim_1/behav/xsim/xsim.dir/sim_rom_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/ruanka/ccp/cpu_singlecycle/cpu_singlecycle.sim/sim_1/behav/xsim/xsim.dir/sim_rom_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key runtime -value "1195 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.06_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "6812_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 4062176685 -regid "" -xml D:/ruanka/ccp/cpu_singlecycle/cpu_singlecycle.sim/sim_1/behav/xsim/xsim.dir/openmips_min_sopc_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/ruanka/ccp/cpu_singlecycle/cpu_singlecycle.sim/sim_1/behav/xsim/xsim.dir/openmips_min_sopc_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/ruanka/ccp/cpu_singlecycle/cpu_singlecycle.sim/sim_1/behav/xsim/xsim.dir/openmips_min_sopc_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
